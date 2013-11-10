@@ -18,9 +18,9 @@ Kasper theme includes:
 
 ## Screenshots
 
-<!-- ![index page](/assets/images/kasper-theme-index.png)
-![post page](/assets/images/kasper-theme-post.png)
- -->
+![index page](https://raw.github.com/rosario/kasper/master/assets/images/kasper-theme-index.png)
+![post page](https://raw.github.com/rosario/kasper/master/assets/images/kasper-theme-post.png)
+
 
 ## Thanks 
 Most of the work as been already done by the Ghost team, I've just ported Casper to Jekyll. 
