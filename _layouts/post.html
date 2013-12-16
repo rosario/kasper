@@ -18,7 +18,7 @@ archive: false
         </header>
         
         <span class="post-meta">
-        	<time datetime="{{ page.date | date_to_string }}">{{ page.date | date_to_string }}</time>
+        	<time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
         	{% if post.categories %}
         		on
 	        	{% for category in page.categories %}
@@ -48,7 +48,7 @@ archive: false
         	<!-- If we want to display author's name and bio -->
             {% if site.author %}
                 <section class="author">
-                	<header> <a href="{{ site.baseurl }}"> <img class="profile" src="/assets/images/profile.png"></a></header>
+                	<header> <a href="{{ site.baseurl }}"> <img class="profile" src="/assets/images/profile.png" alt="Author's profile picture"></a></header>
                 	<article>
                 		<!-- Author Name -->
                     	<h4> {{ site.author }} </h4>
@@ -62,7 +62,7 @@ archive: false
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text={{page.title}}&url={{ page.url }}"
+                <a class="icon-twitter" href="http://twitter.com/share?text={{page.title}}&amp;url={{ page.url }}"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
