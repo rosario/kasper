@@ -5,18 +5,18 @@ cover: false
 about: 'about.html'
 ---
 
-<header class="site-head" {% if page.cover %} style="background-image: url({{ page.cover }})"{% endif%}>
+<header class="site-head" {% if page.cover %} style="background-image: url({{ page.cover }})"{% endif %}>
     <div class="vertical">
         <div class="site-head-content" class="inner">
             {% if page.logo %}
                 <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo}}" alt="Blog Logo" />
+                    <img src="{{ page.logo }}" alt="Blog Logo" />
                 </a>
             {% endif %}
-            <h1 class="blog-title">{{ site.name}}</h1>
+            <h1 class="blog-title">{{ site.name }}</h1>
             <h2 class="blog-description"> 
                 {{ site.description }}. 
-                {% if page.about %} <a href='{{site.baseurl}}{{ page.about }}'> About me </a> {% endif %}
+                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
             </h2>
         </div>
     </div>
@@ -28,12 +28,12 @@ about: 'about.html'
 
     <article class="post">
         <header class="post-header">
-            <span class="post-meta"><time datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time> {{!tags prefix="on "}}</span>
-            <h2 class="post-title"><a href="{{ post.url}}">{{ post.title }}</a></h2>
+            <span class="post-meta"><time datetime="{{ post.date | date="%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {{!tags prefix="on "}}</span>
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
         </header>
         <section class="post-excerpt">
-            {{post.excerpt}}
+            {{ post.excerpt }}
         </section>
     </article>
 
