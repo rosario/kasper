@@ -19,7 +19,7 @@ archive: false
         
         <span class="post-meta">
         	<time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-        	{% if post.categories %}
+        	{% if page.categories %}
         		on
 	        	{% for category in page.categories %}
 	        	    {{category}}
