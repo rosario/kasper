@@ -28,7 +28,11 @@ about: 'about.html'
 
     <article class="post">
         <header class="post-header">
-            <span class="post-meta"><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {{!tags prefix="on "}}</span>
+            <span class="post-meta"><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> 
+                {% if post.categories.size > 0 %} 
+                    {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
+                {% endif %}
+            </span>
             <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
         </header>
