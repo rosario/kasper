@@ -7,7 +7,7 @@ about: 'about.html'
 
 <header class="site-head" {% if page.cover %} style="background-image: url({{ page.cover }})"{% endif %}>
     <div class="vertical">
-        <div class="site-head-content" class="inner">
+        <div class="inner">
             {% if page.logo %}
                 <a class="blog-logo" href="{{ site.baseurl }}">
                     <img src="{{ page.logo }}" alt="Blog Logo" />
@@ -15,7 +15,7 @@ about: 'about.html'
             {% endif %}
             <h1 class="blog-title">{{ site.name }}</h1>
             <h2 class="blog-description"> 
-                {{ site.description }}. 
+                {% if site.description %} {{ site.description }}. {% endif %}
                 {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
             </h2>
         </div>
