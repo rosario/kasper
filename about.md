@@ -3,4 +3,4 @@ layout: page
 title: About me 
 ---
 
-This is where you could put your "About me" page.
+This is a static page. It could be an 'about page' if you'd like.
