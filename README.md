@@ -5,7 +5,7 @@ Feel free to fork, change, modify and re-use it.
 
 ## How to use it
 
-Simply clone this repository, and then run `jekyll -w serve` inside the directory.
+Simply clone this repository, and then run `jekyll serve` inside the directory.
 
 Kasper theme includes:
 
