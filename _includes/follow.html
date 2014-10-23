@@ -1,0 +1,19 @@
+<section class="follow">
+    <h4>Follow me</h4>
+		{% if site.facebook %}
+			<a onClick="ga('send', 'event', 'Social Follow', 'Follow on Facebook');" class="facebook_follow" title="Follow on Facebook" href="http://www.facebook.com/{{ site.facebook }}" target="_blank"><i class="fa fa-2x fa-facebook"></i></a>
+		{% endif %}
+		{% if site.twitter %}
+			<a onClick="ga('send', 'event', 'Social Follow', 'Follow on Twitter');" class="twitter_follow" title="Follow on Twitter" href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-2x fa-twitter"></i></a>
+		{% endif %}
+		{% if site.linkedin %}
+			<a onClick="ga('send', 'event', 'Social Follow', 'Follow on LinkedIn');" class="linkedin_follow" title="Follow on LinkedIn" href="http://www.linkedin.com/in/{{ site.linkedin }}" target="_blank"><i class="fa fa-2x fa-linkedin"></i></a>
+		{% endif %}
+		{% if site.stackoverflow %}
+			<a onClick="ga('send', 'event', 'Social Follow', 'Follow on StackOverflow');" class="stackoverflow_follow" title="Follow on StackOverflow" href="https://stackoverflow.com/users/{{ site.stackoverflow }}" target="_blank"><i class="fa fa-2x fa-stack-overflow"></i></a>
+		{% endif %}
+		{% if site.github %}
+			<a onClick="ga('send', 'event', 'Social Follow', 'Follow on GitHub');" class="github_follow" title="Follow on GitHub" href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-2x fa-github"></i></a>
+		{% endif %}
+</section>
+

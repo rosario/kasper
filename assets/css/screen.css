@@ -1312,6 +1312,51 @@ body:not(.post-template) .post-title {
     color: #50585D;
 }
 
+.follow a {
+	display:block;
+	height:36px;
+	width:36px;
+	text-align:center;
+	line-height:38px;
+	float:left;
+	color:#fff;
+	border-radius:50%;
+	padding: 5px;
+	margin: 5px;
+}
+
+.follow a.facebook_follow {
+	background-color: #5676A4;
+}
+
+.follow a.twitter_follow {
+	background-color: #53B6D8;
+}
+
+.follow a.linkedin_follow {
+	background-color: #65A9D0;
+}
+
+.follow a.google_follow {
+	background-color: #3682C3;
+}
+
+.follow a.rss_follow {
+	background-color: #E99C60;
+}
+
+.follow a.stackoverflow_follow {
+	background-color: #FF9900;
+}
+
+.follow a.github_follow {
+	background-color: #000;
+}
+
+.site-footer a:hover {
+    color: #50585D;
+}
+
 .poweredby {
     display: block;
     width: 45%;
