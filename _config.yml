@@ -11,5 +11,15 @@ domain_name: 'http://yourblog-domain.com'
 google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url: 'blog url'
+author: 'Your Name'
+author-image: '/assets/images/profile.png'
+author-image-alt: 'Author profile picture'
+
+# Social Media
+facebook: YourUsername
+twitter: YourUsername
+linkedin: YourUsername
+stackoverflow: 12345678
+github: YourUsername
+

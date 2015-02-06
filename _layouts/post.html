@@ -64,7 +64,7 @@ post_class: post-template
             <!-- If we want to display author's name and bio -->
             {% if site.author %}
                 <figure class="author-image">
-                    <a class="img" href="{{ site.baseurl }}" style="background-image: url(/assets/images/profile.png)">
+                    <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.author-image }})">
                     <span class="hidden">{{site.author}}'s Picture</span></a>
                 </figure>
                 <section class="author">
@@ -79,6 +79,9 @@ post_class: post-template
 
             <!-- Share links section -->
             {% include share.html %}
+
+			<!-- Follow me section -->
+			{% include follow.html %}
             
             <!-- Disqus comments -->
             {% if page.disqus %}
