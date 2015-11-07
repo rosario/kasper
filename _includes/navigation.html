@@ -1,0 +1,13 @@
+<div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        {% for nav in site.navigation %}
+            <li class="{%if current%} nav-current{%endif%}" role="presentation"><a href="{{nav.url}}">{{nav.label}}</a></li>
+        {% endfor %}
+    </ul>
+    <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
