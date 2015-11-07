@@ -9,7 +9,13 @@ paginate: 15
 baseurl: /
 domain_name: 'http://yourblog-domain.com'
 google_analytics: 'UA-XXXXXXXX-X'
+navigation:
+  - label: About
+    url: /about.html
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url: 'blog url'
+author: 'Your Name'
+bio: Here goes the author description. You might want to place some links too in here
+location: Anytown, USA
+website: https://google.com
