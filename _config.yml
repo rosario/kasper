@@ -26,4 +26,8 @@ permalink: "/:year/:month/:day/:title"
 sass:
   sass_dir: "/assets/css"
   style: :compressed
-highlighter: pygments
+
+# Plugins (GitHub Pages only support a few)
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
