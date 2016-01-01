@@ -18,3 +18,12 @@ author:         'Karthik Chintala'
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
+
+# Jekyll build settings
+paginate: 10
+paginate_path: "/page:num"
+permalink: "/:year/:month/:day/:title"
+sass:
+  sass_dir: "/assets/css"
+  style: :compressed
+highlighter: pygments
