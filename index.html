@@ -3,9 +3,6 @@ layout: default
 title: Home
 cover: false
 about: 'about.html'
-include_comments:
-count: true
-embed: true
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
@@ -61,7 +58,7 @@ embed: true
     </article>
 
     <!-- Capser below -->
-<!--     <article class="{{post_class}}">
+   <article class="{{post_class}}">
     <header class="post-header">
         <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
     </header>
@@ -74,7 +71,7 @@ embed: true
         {{tags prefix=" on "}}
         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
     </footer>
-    </article> -->
+    </article>
     <!--  -->
 
     {% endfor %}
