@@ -11,5 +11,10 @@ domain_name: 'http://karthikchintala1.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url:            'http://karthikchintala1.github.io'
+author:         'Karthik Chintala'
+
+# Plugins (GitHub Pages only support a few)
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
