@@ -14,15 +14,16 @@ google_analytics: 'UA-XXXXXXXX-X'
 url:            'http://karthikchintala1.github.io'
 author:         'Karthik Chintala'
 
-# Plugins (GitHub Pages only support a few)
-gems:
-  - jekyll-redirect-from
-  - jekyll-sitemap
+# Setting for comments helper
+comments:
+  provider: disqus
+  disqus:
+    short_name: karthikforgit
 
 # Jekyll build settings
-paginate: 10
+paginate: 5
 paginate_path: "/page:num"
-permalink: "/:year/:month/:day/:title"
+permalink: /:categories/:year/:month/:day/:title/
 sass:
   sass_dir: "/assets/css"
   style: :compressed
