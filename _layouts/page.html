@@ -17,7 +17,7 @@ post_class: post-template page-template
                     <img src="{{site.logo}}" alt="{{ site.name }}" />
                 {% else %}
                     <span class="blog-title">{{ site.name }}</span>
-                {%endif%} 
+                {%endif%}
             </a>
         </header> -->
 
@@ -26,6 +26,8 @@ post_class: post-template page-template
         <section class="post-content">
             {{content}}
         </section>
+
+        <a href="{{ page.url }}index.html#disqus_thread" data-disqus-identifier="{{page.url}}"></a>
 
     </article>
 

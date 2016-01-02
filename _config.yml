@@ -3,22 +3,15 @@ description: About technology
 meta_description: "Techie for life"
 
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 logo: false
 paginate: 15
 baseurl: /
-domain_name: 'http://karthikchintala1.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
 url:            'http://karthikchintala1.github.io'
 author:         'Karthik Chintala'
-
-# Setting for comments helper
-comments:
-  provider: disqus
-  disqus:
-    short_name: karthikforgit
 
 # Jekyll build settings
 paginate: 5
