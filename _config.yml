@@ -3,7 +3,7 @@ description: About technology
 meta_description: "Techie for life"
 
 markdown: redcarpet
-highlighter: rouge
+highlighter: pygments
 logo: false
 paginate: 15
 baseurl: /
