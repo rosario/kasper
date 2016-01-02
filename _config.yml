@@ -19,7 +19,7 @@ paginate_path: "/page:num"
 permalink: /:categories/:year/:month/:day/:title/
 sass:
   sass_dir: "/assets/css"
-  style: :compressed
+  style: compressed
 
 # Plugins (GitHub Pages only support a few)
 gems:
