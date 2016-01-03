@@ -56,7 +56,7 @@ comments: true
                 {{ post.date | date_to_string }}
             </time>
             |
-            <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{post.url}}"></a>
+            <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ site.url }}{{post.url}}"></a>
         </footer>
     </article>
 
