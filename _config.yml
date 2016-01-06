@@ -16,7 +16,7 @@ author:         'Karthik Chintala'
 # Jekyll build settings
 paginate: 5
 paginate_path: "/page:num"
-permalink: /:year/:month/:day/:title/
+permalink: /:categories/:year/:month/:day/:title/
 sass:
   sass_dir: "/assets/css"
   style: :compressed
