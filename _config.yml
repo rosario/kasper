@@ -10,7 +10,7 @@ baseurl: /
 google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
-url:            'http://karthikchintala1.github.io'
+url:            'http://www.karthikchintala.com'
 author:         'Karthik Chintala'
 
 # Jekyll build settings
