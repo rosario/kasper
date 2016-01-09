@@ -5,7 +5,7 @@ meta_description: "Techie for life"
 markdown: redcarpet
 highlighter: rouge
 logo: false
-paginate: 15
+paginate: 10
 baseurl: /
 google_analytics: 'UA-XXXXXXXX-X'
 
