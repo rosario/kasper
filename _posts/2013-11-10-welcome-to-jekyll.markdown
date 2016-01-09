@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Welcome to Jekyll!"
-date: {}
+date: 2013-11-10
 categories: Thriller Comedy Horror
 comments: true
-published: true
 ---
 
 
