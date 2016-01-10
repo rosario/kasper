@@ -4,6 +4,7 @@ title: Home
 cover: false
 about: 'about.html'
 comments: true
+spotcomments: true
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
@@ -27,6 +28,9 @@ comments: true
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
+{% if page.spotcomments %}
+    {% include spotim.html %}
+{% endif %}
 
 <main id="content" class="content" role="main">
 
@@ -57,7 +61,8 @@ comments: true
                 {{ post.date | date_to_string }}
             </time>
             |
-            <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ site.url }}{{post.url}}"></a>
+            <!-- <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ site.url }}{{post.url}}"></a> -->
+            <span class="spot-im-replies-count" data-post-id="postId"/></span> <span>Comments</span>
         </footer>
     </article>
 

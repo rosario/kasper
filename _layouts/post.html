@@ -25,26 +25,6 @@ post_class: post-template
                 {% endif %}
             </section>
         </header>
-
-<!--         <header class="post-header">
-            <a id="blog-logo" href="{{site.url}}">
-                {% if site.logo %}
-                    <img src="{{site.logo}}" alt="{{ site.name }}" />
-                {% else %}
-                    <span class="blog-title">{{ site.name }}</span>
-                {%endif%}
-            </a>
-        </header> -->
-
-        <!-- <span class="post-meta">
-            <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-            {% if page.categories.size > 0 %}
-                {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
-            {% endif %}
-        </span> -->
-
-        <!-- <h1 class="post-title">{{ page.title }}</h1> -->
-
         <section class="post-content">
             {{content}}
         </section>
@@ -80,10 +60,13 @@ post_class: post-template
             {% include share.html %}
 
             <!-- Disqus comments -->
-            {% if page.comments %}
+            <!-- {% if page.comments %}
                 {% include disqus.html %}
+            {% endif %} -->
+            {% if page.spotcomments %}
+                {% include spotim.html %}
             {% endif %}
-
+            <div class="spot-im-frame-inpage" data-post-id="{{ site.url }}{{ post.url }}"></div>
         </footer>
 
     </article>
