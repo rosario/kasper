@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to Jekyll!"
 date: 2013-11-10
 categories: Thriller Comedy Horror
-comments: true
+spotcomments: true
 ---
 
 
