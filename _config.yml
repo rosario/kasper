@@ -1,15 +1,28 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: Karthik Chintala
+description: About technology
+meta_description: "Techie for life"
 
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 logo: false
-paginate: 15
+paginate: 10
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
 google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url:            'http://www.karthikchintala.com'
+author:         'Karthik Chintala'
+
+# Jekyll build settings
+paginate: 5
+paginate_path: "/page:num"
+permalink: /:categories/:year/:month/:day/:title/
+sass:
+  sass_dir: "/assets/css"
+  style: :compressed
+
+# Plugins (GitHub Pages only support a few)
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-sass-converter
