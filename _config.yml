@@ -3,14 +3,14 @@ description: Blogging about stuffs
 meta_description: "Your New Jekyll Site, Blogging about stuffs"
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: false
 paginate: 15
 baseurl: /
 domain_name: 'http://yourblog-domain.com'
 google_analytics: 'UA-XXXXXXXX-X'
-gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
 url:            'blog url'
 author:         'Your Name'
+
