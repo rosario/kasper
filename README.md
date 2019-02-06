@@ -9,6 +9,7 @@ Feel free to fork, change, modify and re-use it.
     cd kasper
     gem install jekyll
     gem install pygments.rb
+    gem install jekyll-paginate
 
 ## How to use it
 
