@@ -1,0 +1,220 @@
+---
+layout: post
+title:  "HTML5(Semantic Mark-up)"
+date:   2019-01-07 10:00:00
+categories: HTML
+---
+
+
+#### 정의
+
+HTML의 새로운 버전으로 `Client Side Technology` 기술의 중심이 되는 마크업 언어입니다.
+
+가장 특징적인 것은 기존의 웹 문서에서는 HTML 만으로 웹 서비스를 구성하는 것이 불가능하였지만 HTML5 로 넘어오면서 클라이언트와 서버와의 통신이 가능하며 이에 대한 부가 기능을 제공함으로써 다른 외부 Active-X와 같은 plug-ins 사용하지 않고도 웹 서비스를 제공할 수 있을 정도로 많은 기능이 추가되었다는 것입니다.
+
+HTML5 는 Client Side Technology 를 강력하게 지원하는 단순 표현 HTML을 그 이상의 의미를 가지도록 더 높은 차원으로 발전시킨 기술입니다.
+
+즉, 기존의 HTML은 HTML 4.0 이후에도 W3C에 의해서 HTML 4.01, XHTML 1.0, 1.1, 2.0 등으로 발전해 왔지만 이런 그동안의 HTML 에서 의 한계를 극복하기 위해 HTML5 가 탄생하게 된 것입니다.
+
+ HTML5 의 등장으로 **CSS3, 자바스크립트 API를 통한 기능의 확장과 결합**을 통해 기존의 HTML 이상의 의미를 부여하게 되었고 기존의 Active-X 와 같은 플러그인인 외부 기술에 의존했던 것을 걷어냄으로서 **웹표준, 웹접근성을 한층 높여놓고 있습니다.**
+
+## HTML4 vs HTML5
+
+1. ##### **Syntax (구문)**
+
+2. ##### **Language (언어)**
+
+3. ##### **API**
+
+크게 세가지 항목으로 나뉜다.
+
+##### 1. Syntax(구문)
+
+- DOCTYPE
+
+  ```
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+  <!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  ```
+
+  ```
+  <!DOCTYPE html>
+  ```
+
+   이전 버전의 HTML(HTML2~HTML4)은 **SGML(Standard Generalized Markup Language)**에 기반을 두어 만들어졌기 때문에 DTD 참조가 필요하며, 이 때문에 DOCTYPE 선언을 하려면 공개 식별자와 시스템 식별자가 포함된 긴 문자열을 작성해야 한다.
+
+    HTML5에서는 SGML에 기반을 두지 않아서 DTD 참조가 필요 없으며, 최소한의 코드 작성이 기본 방향이라 매우 간단히 선언할 수 있다.
+
+- Encoding
+
+  ```
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=KSC5601">
+  ```
+
+  ```
+  <meta charset="UTF-8">
+  ```
+
+  기존 euc-kr은 영어이외의 외국어를 표현하는데 크고 작은 어려움이 있었으나 utf-8은 전세계 모든 문자들을 한꺼번에 인코딩 할 수 있습니다.
+
+- 그 밖의 단순화
+
+  ```
+  <style type="text/css"></style>
+  ```
+
+  ```
+  <style></style>
+  ```
+
+  ------
+
+  ```javascript
+  <script type="text/javascript"> 
+  <script language="javascript"> 
+  ```
+
+  ```
+  <script></script>
+  ```
+
+------
+
+##### 2. Language (언어)
+
+- 새롭게 추가된 `Sementic Element`
+
+  ##### **Sementic Element*
+
+  > HTML4는 아무런 의미 없는 <div> 태그를 사용하여 개발자들이 붙이는 id값에 따라 문서 내용을 구분하여 문서의 구조를 파악하기 쉽지 않았습니다. HTML5는 `Sementic Element`를 사용하여 **실제내용을 쉽게 구분**할수 있으며 **문서 구조를 파악**하는데 용이합니다.
+
+  [^Sementic Web]: '의미론적인 웹'
+
+  ##### **Sementic Mark-up을 통해 얻을 수 있는 이점**
+
+  - 코드의 가독성 향상
+  - Outline을 통한 Skip Navigation의 자동 생성 (iOS Safari의 Reader와 같은 기능)
+  - SEO(Search Engine Optimization) 검색엔진최적화
+  - 유지보수에 용이하다.
+  - 웹 접근성이 강화된다.
+
+  ![img](https://code.d2.co.kr/kaylee/images/sementic.png)
+
+  | Element    | 설명                                                         |
+  | ---------- | :----------------------------------------------------------- |
+  | Header     | 문서의 Header 를 나타낼 때 사용한다.                         |
+  | Footer     | 문서의 Footer 를 나타낼 때 사용한다.                         |
+  | Nav        | 문서내에 Navigation 요소가 있을 때 사용한다.                 |
+  | Section    | 문서의 영역을 구성하며, 문서 구조를 구성하는 H1~H6 와 함께 사용한다. |
+  | Article    | 뉴스기사나 블로그 article 과 같은 독립된 Contents 를 표시할 때 사용한다. |
+  | Aside      | 주요 컨텐츠 이외의 참고가 될 수 있는 컨텐츠를 구성할때 사용한다. |
+  | Figure     | 그림, 비디오와 같은 포함된 컨텐츠의 Caption 을 표시할때 사용한다. |
+  | Figcaption | 캡션에 사용한다.                                             |
+
+  ###### Browser Support : Chrome,ie9,Firefox,Safari,Opera
+
+  ```html
+  <header>
+      <h1>Most important heading here</h1>
+      <h3>Less important heading here</h3>
+      <p>Some additional information here</p>
+  </header>
+  
+  <nav>
+      <a href="/html/">HTML</a>
+      <a href="/css/">CSS</a>
+      <a href="/js/">JavaScript</a>
+      <a href="/jquery/">jQuery</a>
+  </nav>
+  
+  <section>
+      <article>
+          <h2>Google Chrome</h2>
+          <p>Google Chrome is a free, open-source web browser developed by Google</p>
+          <figure>
+              <img src="pic_trulli.jpg" alt="Trulli">
+              <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+          </figure>
+      </article>
+  </section>
+  
+  <aside>
+      <h4>Epcot Center</h4>
+      <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+  </aside>
+  
+  <footer>
+      <p>Posted by: Hege Refsnes</p>
+  </footer>
+  ```
+
+- 기능 `Element`
+
+  | Element     | 설명                                                         |
+  | ----------- | ------------------------------------------------------------ |
+  | Audio,Video | 멀티미디어 컨텐츠를 표시하는 데 사용한다.                    |
+  | mark        | 별도로 표시한 문자를 표시하는데 사용한다.                    |
+  | meter       | 측정값을 표시할 때 사용한다.                                 |
+  | progress    | 작업 진행상황을 나타낼 때 사용한다.                          |
+  | output      | 스크립트 계산 결과 같은 실행결과를 표시하는데 사용한다.      |
+  | details     | 사용자 요청에 따라 얻은 콘트롤이나 추가적인 정보를 표시하는데 사용한다. |
+  | time        | 날짜,시간을 표시할 때 사용한다.                              |
+
+  [예시]: https://www.w3schools.com/code/tryit.asp?filename=FYUSNLF5CL2S
+
+- 새롭게 추가된 `Attribute`
+
+  | Attribute   | 설명                                                    |
+  | ----------- | ------------------------------------------------------- |
+  | hidden      | element 가 아직 없거나 없을 때 사용한다.                |
+  | data-*      | 사용자 데이터 속성                                      |
+  | draggable   | 새로욲 Drag & Drop API 에서 사용할 수 있다.             |
+  | contextmenu | 작성자가 제작한 Context Menu 지정하는데 사용할 수 있다. |
+  | spellcheck  | 맞춤범 검사기능을 제공할지 여부를 지정한다.             |
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="utf-8" />
+      <style type="text/css">
+          [data-item] {
+              color: red;
+          }
+      </style>
+  </head>
+  <body>
+      <ul id="myItems">
+          <li class="items" data-item="1" data-type="text">item1</li>
+          <li class="items" data-item="2" data-type="text">item2</li>
+          <li class="items" data-item="3" data-type="number">1</li>
+          <li class="items" data-item="4" data-type="number">4</li>
+      </ul>
+      <script>
+          var items = document.querySelectorAll('[data-type="number"]');
+          console.log(items);
+      </script>
+  </body>
+  </html>
+  ```
+
+  [draggable]: https://jqueryui.com/draggable/
+  [contextmenu]: https://swisnl.github.io/jQuery-contextMenu/demo.html
+  [spellcheck]: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_global_spellcheck
+
+## 결론
+
+HTML5는 많은 사람들이 웹 사이트 구조의 가장 중요한 부분을 의미론적인 마크업과 이해할 수 있는 API로 개발했다. HTML5를 현명하게 사용하면 더 빠르고 민첩한 다운로드, 향상된 검색엔진 배치, 수월한 개발이 가능하다.
+
+##### 참고
+
+[https://direct.co.kr/cs/HTML5.pdf]: https://direct.co.kr/cs/HTML5.pdf
+
+[HTML5의 Custom Data Attributes를 이용하여 HTML을 의미있는 데이터로 사용하기](http://blog.saltfactory.net/using-html5-custom-data-attributes/)
+
+https://www.slideshare.net/headvoy/best-practice-of-html5-semantic-markup
