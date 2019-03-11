@@ -1,5 +1,5 @@
 name: Kaylee`s Blog
-description: 
+description: code review
 meta_description: "kaylee"
 
 markdown: kramdown
@@ -7,9 +7,9 @@ highlighter: pygments
 logo: false
 paginate: 15
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
+domain_name: 'https://kaylee105.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
-gems: [jekyll-paginate]
+gems: [Kaylee]
 
 # Details for the RSS feed generator
 url:            'kaylee105.github.io'
