@@ -6,7 +6,7 @@ markdown: kramdown
 highlighter: pygments
 logo: false
 paginate: 15
-baseurl: 'kaylee105.github.io/'
+baseurl: 'kaylee105.github.io'
 domain_name: 'https://kaylee105.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [Kaylee]
