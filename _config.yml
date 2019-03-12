@@ -12,5 +12,5 @@ google_analytics: 'UA-XXXXXXXX-X'
 gems: [Kaylee]
 
 # Details for the RSS feed generator
-url:            'https://kaylee105.github.io'
+url:            'kaylee105.github.io'
 author:         'kaylee'
