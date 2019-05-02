@@ -6,11 +6,11 @@ markdown: kramdown
 highlighter: pygments
 logo: false
 paginate: 15
-baseurl: 'kaylee105.github.io'
-domain_name: 'https://kaylee105.github.io'
+baseurl: 'kaylee1005.github.io'
+domain_name: 'https://kaylee1005.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [Kaylee]
 
 # Details for the RSS feed generator
-url:            'kaylee105.github.io'
+url:            'kaylee1005.github.io'
 author:         'kaylee'
