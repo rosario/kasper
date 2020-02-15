@@ -1,16 +1,19 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: benrobb.com
+description: 
+meta_description:
+
+plugins:
+- jekyll-paginate
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: false
-paginate: 15
+paginate: 10
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
-google_analytics: 'UA-XXXXXXXX-X'
+domain_name: 'https://benrobb.com'
+google_analytics: 
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url:            'https://benrobb.com'
+author:         'Ben Robison'
