@@ -6,13 +6,8 @@ author: Ben
 layout: post
 guid: http://benrobb.com/?p=138
 permalink: /2008/08/08/howto-buy-a-home-part-1-finding-a-house/
-dsq_thread_id:
-  - "3051385423"
 categories:
-  - Old Stuff
-tags:
-  - homes
-  - Life
+  - life
 ---
 <img class="alignleft" style="margin: 10px 15px;" title="home_for_sale" src="https://benrobb.com/wp-content/uploads/2008/11/home_for_sale.png" alt="Home For Sale" width="159" height="117" />So my wife and I have been in the process of looking for homes for the last 3-4 months.  We found one that we liked, and are now a few days away from closing, but we learned a few things along the way, and I thought that perhaps some other first time home buyers might benefit from it.
 

@@ -8,10 +8,7 @@ guid: http://benrobb.com/?p=356
 permalink: /2012/03/07/idea-4-extreme-hardware-convergence/
 image: /wp-content/uploads/2012/03/ubuntu_on_android-144x90.jpg
 categories:
-  - Old Stuff
-tags:
-  - computing
-  - future
+  - tech
 ---
 The Motorola Atrix Laptop Dock orginally debuted at a price of $500 a little less than a year ago.  <a href="http://www.pcworld.com/article/224389/motorolas_xoom_and_atrix_duds.html">Disappointing sales</a> figures led to discounts and today you can now get them on AT&amp;T's site for 1/10 of that price.
 

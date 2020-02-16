@@ -6,14 +6,9 @@ author: Ben
 layout: post
 guid: http://benrobb.com/?p=365
 permalink: /2012/03/08/idea-5-all-sides-of-the-issue-com/
-dsq_thread_id:
-  - "4102579728"
 image: /wp-content/uploads/2012/03/kaleidoscope-mini-180x160.jpg
 categories:
-  - Old Stuff
-tags:
-  - politics
-  - truth
+  - life
 ---
 <a href="https://benrobb.com/wp-content/uploads/2012/03/kaleidoscope-mini.jpg"><img class="aligncenter size-full wp-image-366" title="kaleidoscope-mini" src="https://benrobb.com/wp-content/uploads/2012/03/kaleidoscope-mini.jpg" alt="" width="319" height="320" /></a>
 

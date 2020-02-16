@@ -6,13 +6,8 @@ author: Ben
 layout: post
 guid: http://benrobb.com/?p=140
 permalink: /2008/08/12/howto-buy-a-home-part-2-making-an-offer/
-dsq_thread_id:
-  - "3051385057"
 categories:
-  - Old Stuff
-tags:
-  - homes
-  - Life
+  - life
 ---
 <img class="alignleft size-full wp-image-166" style="margin: 10px 15px;" title="home_for_sale_2" src="https://benrobb.com/wp-content/uploads/2008/11/home_for_sale_2.png" alt="" width="148" height="103" />In <a title="Part 1: Finding A House" href="https://benrobb.com/2008/08/08/howto-buy-a-home-part-1-finding-a-house/" target="_blank">Part 1</a>, we talked about finding an agent, getting pre-qualified, and finding a home.  Now we'll talk about what to do once you find a few homes you want to walk-through.
 

@@ -6,13 +6,8 @@ author: Ben
 layout: post
 guid: http://benrobb.com/2008/02/19/you-are-not-mr-alis-next-of-kin/
 permalink: /2008/02/19/you-are-not-mr-alis-next-of-kin/
-dsq_thread_id:
-  - "3051385368"
 categories:
-  - Old Stuff
-tags:
-  - best of
-  - email spam
+  - tech
 ---
 <img src="https://benrobb.com/wp-content/uploads/2008/02/kuala_lumpur.thumbnail.jpg" alt="Hang Seng Ltd." align="left" hspace="15" vspace="5" />And neither am I =)
 

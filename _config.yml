@@ -11,7 +11,7 @@ logo: false
 paginate: 10
 baseurl: /
 domain_name: 'https://benrobb.com'
-google_analytics: 
+google_analytics: 'UA-1265431-1'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator

@@ -6,10 +6,8 @@ author: Ben
 layout: post
 guid: http://benrobb.com/2007/01/10/why-is-there-a-minimum-ethernet-framesize/
 permalink: /2007/01/10/why-is-there-a-minimum-ethernet-framesize/
-dsq_thread_id:
-  - "3055758761"
 categories:
-  - Old Stuff
+  - tech
 ---
 An ethernet frame has a minimum size of 64 bytes and a maximum size of 1500 bytes. But why is there a minimum?
 

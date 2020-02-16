@@ -7,7 +7,7 @@ layout: post
 guid: http://benrobb.com/?p=176
 permalink: /2009/01/20/we-the-people/
 categories:
-  - Old Stuff
+  - life
 ---
 "We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence,<a href="http://en.wikipedia.org/wiki/Preamble_to_the_United_States_Constitution#cite_note-0"> </a>promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."
 
