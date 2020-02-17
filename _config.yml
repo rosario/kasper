@@ -1,5 +1,5 @@
 name: benrobb.com
-description: 
+description: A few selections from the archives
 meta_description:
 
 plugins:
@@ -16,4 +16,4 @@ gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
 url:            'https://benrobb.com'
-author:         'Ben Robison'
+author:         'Ben'
