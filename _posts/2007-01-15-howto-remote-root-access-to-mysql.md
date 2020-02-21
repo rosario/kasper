@@ -7,13 +7,14 @@ layout: post
 guid: http://benrobb.com/2007/01/15/howto-remote-root-access-to-mysql/
 permalink: /2007/01/15/howto-remote-root-access-to-mysql/
 image: /wp-content/uploads/2007/01/GotRoot-144x90.png
+excerpt_separator: <!--more-->
 categories:
   - tech
 
 ---
-Update: This post has garnered a lot of attention.  So I'd like to clarify up front: this article is not about hacking into other databases.  This is about configuring a server you own so that you can access it from a remote machine on the same network.  It is completely insecure and should never be used for production deployments.
+*Update*: This post has garnered a lot of attention.  So I'd like to clarify up front: this article is not about hacking into other databases.  This is about configuring a server you own so that you can access it from a remote machine on the same network.  It is completely insecure and should never be used for production deployments.
 
---
+<!--more-->
 
 Very quickly, another thing that I typically like to do on my server boxes is allow root access to my Mysql database from remote computers. I don’t forward the port through my router and I use a very secure password (doesn’t everyone?). I don’t want to create a security risk, I just want to connect to the database from other computers around my network - particularly from my laptop.
 

@@ -12,7 +12,7 @@ categories:
 ---
 An ethernet frame has a minimum size of 64 bytes and a maximum size of 1500 bytes. Anything shorter than the 64 byte minimum is interpreted by receiving stations as a collision.
 
-![A funner type of collision](/assets/post_images/billiards_balls.jpg)
+![Billiard balls are make a different type of collision](/assets/post_images/billiards_balls.jpg)
 
 A station that wants to transmit will begin its transmission when it can sense that there are no other transmitting stations (carrier sense) on the network. Multiple stations can sense this at the same time, and both can begin transmitting at the same time.
 

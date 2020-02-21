@@ -6,10 +6,14 @@ author: Ben
 layout: post
 guid: http://benrobb.com/2007/01/16/howto-secure-vnc-through-ssh-tunneling/
 permalink: /2007/01/16/howto-secure-vnc-through-ssh-tunneling/
+excerpt_separator: <!--more-->
 categories:
   - tech
 ---
-My web server sits in the baby’s room at my house. It sits in the corner, and the only thing plugged into it is power and network. This is fine for just about everything that I do, but every once in awhile, I have a problem that requires a user interface. VNC to the rescue. Ubuntu comes with Vino, a little VNC Server, pre-installed. You can go to System > Preferences > Remote Desktop to set a password, turn off local user verification, and turn on desktop sharing (as opposed to just viewing).
+
+My web server sits in the baby’s room at my house and the only thing plugged into it is power and network. This is fine for just about everything that I do, but every once in awhile, I have a problem that requires a user interface. VNC to the rescue. Ubuntu comes with Vino, a little VNC Server, pre-installed. You can go to System > Preferences > Remote Desktop to set a password, turn off local user verification, and turn on desktop sharing (as opposed to just viewing).
+
+<!--more-->
 
 Then you find your favorite VNC viewer, and type in the network address of your server. This works fine as long as you’re on the local network, but what happens when you’re not on your local network? You could always forward the VNC port through your firewall (port 5900 by default), but VNC is not a secure protocol. Any password typed in would be transmitted in plain-text, and anyone in the world could intercept, and then control your computer, no hack attack needed.
 
