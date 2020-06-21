@@ -3,10 +3,18 @@ layout: default
 post_class: post-template page-template
 ---
 
-<nav class="main-nav clearfix">
+<!-- <nav class="main-nav clearfix">
     <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
-    <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>
-</nav>
+    <a class="subscribe-button icon-feed" href="{{ 'feed.xml' | relative_url}}">Subscribe</a>
+</nav> -->
+
+<header class="main-header post-head {% if page.cover %}"
+    style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
+        <a class="back-button icon-arrow-left" href="{{'/' | relative_url }}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{'feed.xml' | relative_url }}">Subscribe</a>
+    </nav>
+</header>
 
 
 <main class="content" role="main">

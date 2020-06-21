@@ -6,14 +6,14 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
-baseurl: /
-domain_name: 'http://yourblog-domain.com'
-google_analytics: 'UA-XXXXXXXX-X'
+baseurl: /kasper
+domain_name: "http://yourblog-domain.com"
+google_analytics: "UA-XXXXXXXX-X"
 plugins: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url: ""
+author: "Your Name"
 
 # Disqus config
 disqus-shortname: ""
