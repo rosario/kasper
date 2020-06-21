@@ -45,7 +45,7 @@ about: 'about.html'
         </section>
         <footer class="post-meta">
             {% if site.author %}
-                <img class="author-thumb" src="{{'/assets/images/profile.png' | absolute_url}}" alt="Author's profile picture" nopin="nopin" />
+                <img class="author-thumb" src="{{'/assets/images/profile.png' | relative_url}}" alt="Author's profile picture" nopin="nopin" />
                 {{ site.author }}
             {% endif %}
             {% if post.categories.size > 0 %} 
