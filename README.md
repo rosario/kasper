@@ -1,6 +1,6 @@
 # Kasper
 
-> This is a port of Ghost's default theme [Casper v1](https://github.com/tryghost/casper) for Jekyll. Here is a live [demo](https://rosario.io/kasper). 
+This is a port of Ghost's default theme [Casper v1](https://github.com/tryghost/casper) for Jekyll. Here is a live [demo](https://rosario.io/kasper). 
 
 Feel free to fork, change, modify and re-use it.
 
