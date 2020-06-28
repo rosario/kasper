@@ -6,8 +6,8 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
-baseurl: /kasper
-domain_name: "http://yourblog-domain.com"
+baseurl: ""
+domain_name: "emilymu.com"
 google_analytics: "UA-XXXXXXXX-X"
 plugins: [jekyll-paginate]
 
