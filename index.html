@@ -41,6 +41,8 @@ about: 'about.html'
             <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         </header>
         <section class="post-excerpt">
+            <img src="{{ post.thumbnail }}">
+            <br>
             {{ post.excerpt }} <a class="read-more" href="{{ post.url | relative_url }}">&raquo;</a>
         </section>
         <footer class="post-meta">
