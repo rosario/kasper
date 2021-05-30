@@ -6,6 +6,7 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
+paginate_path: "/page:num"
 baseurl: /kasper
 domain_name: "http://yourblog-domain.com"
 google_analytics: "UA-XXXXXXXX-X"
