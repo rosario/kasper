@@ -7,7 +7,7 @@ highlighter: rouge
 logo: false
 paginate: 15
 baseurl: /kasper
-domain_name: "http://yourblog-domain.com"
+domain_name: "https://michael131468.github.io"
 google_analytics: "UA-XXXXXXXX-X"
 plugins: [jekyll-paginate]
 
