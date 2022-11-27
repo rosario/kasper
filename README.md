@@ -1,6 +1,10 @@
-# Kasper
+# Dark-Kasper
 
-This is a port of Ghost's default theme [Casper v1](https://github.com/tryghost/casper) for Jekyll. Here is a live [demo](https://rosario.io/kasper). 
+This is a modified fork of the Kasper theme [Kasper](https://github.com/rosario/kasper) for Jekyll to convert it into a dark theme. Here is a live [demo](https://michael131468.github.io/dark-kasper/).
+
+This is under active development and not finished.
+
+The colours are picked a bit randomly and this theme is not fully tested so here be dragons.
 
 Feel free to fork, change, modify and re-use it.
 
