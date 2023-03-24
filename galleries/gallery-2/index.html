@@ -1,0 +1,62 @@
+
+    <html>
+      <head>
+        <link rel="stylesheet" href="http://127.0.0.1:4000/dark-kasper/assets/css/photoswipe/photoswipe.css">
+        <script src="http://127.0.0.1:4000/dark-kasper/assets/js/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="http://127.0.0.1:4000/dark-kasper/assets/js/masonry/masonry.pkgd.min.js"></script>
+        <style>
+          .grid-item {
+            width: 210px;
+            margin-bottom: 20px;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="grid pswp-gallery" id="my-gallery">
+          <!-- Copy and paste from here to your post -->
+          
+          <div class="grid-item">
+            <a href="http://127.0.0.1:4000/dark-kasper/galleries/gallery-2/leon-rohrwild-XqJyl5FD_90-unsplash.jpg" data-pswp-width="6240" data-pswp-height="4160" target="_blank">
+              <img src="http://127.0.0.1:4000/dark-kasper/galleries/gallery-2/thumbnail_leon-rohrwild-XqJyl5FD_90-unsplash.jpg" alt="" />
+            </a>
+          </div>
+    
+          <div class="grid-item">
+            <a href="http://127.0.0.1:4000/dark-kasper/galleries/gallery-2/luis-magallon-rK4p0vUjVKc-unsplash.jpg" data-pswp-width="8000" data-pswp-height="6000" target="_blank">
+              <img src="http://127.0.0.1:4000/dark-kasper/galleries/gallery-2/thumbnail_luis-magallon-rK4p0vUjVKc-unsplash.jpg" alt="" />
+            </a>
+          </div>
+    
+          <div class="grid-item">
+            <a href="http://127.0.0.1:4000/dark-kasper/galleries/gallery-2/simon-0EkEV2fKVCs-unsplash.jpg" data-pswp-width="4160" data-pswp-height="6240" target="_blank">
+              <img src="http://127.0.0.1:4000/dark-kasper/galleries/gallery-2/thumbnail_simon-0EkEV2fKVCs-unsplash.jpg" alt="" />
+            </a>
+          </div>
+    
+          <!-- End copy and paste -->
+        </div>
+        <script type="module">
+          import PhotoSwipeLightbox from "http://127.0.0.1:4000/dark-kasper/assets/js/photoswipe/photoswipe-lightbox.esm.min.js";
+          import PhotoSwipe from "http://127.0.0.1:4000/dark-kasper/assets/js/photoswipe/photoswipe.esm.min.js";
+
+          const lightbox = new PhotoSwipeLightbox({
+            gallery: "#my-gallery",
+            children: "a",
+            pswpModule: PhotoSwipe
+          });
+          lightbox.init();
+        </script>
+        <script>
+          var elem = document.querySelector(".grid");
+          var msnry = new Masonry( elem, {
+            itemSelector: ".grid-item",
+            columnWidth: 230
+          });
+
+          imagesLoaded( elem ).on("progress", function() {
+            msnry.layout();
+          });
+        </script>
+      </body>
+    </html>
+    

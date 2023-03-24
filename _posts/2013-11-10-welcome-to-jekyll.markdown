@@ -3,7 +3,9 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2013-11-10 10:18:00
 categories: Thriller Comedy Horror
-has_gallery: true
+galleries:
+  - one
+  - two
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
@@ -54,7 +56,7 @@ And here is an image:
 And here is an image gallery of random unsplash images displayed using photoswipe, masonry
 and imagesloaded. See /galleries for details on how to set up your own galleries.
 
-<div class="grid pswp-gallery" id="my-gallery">
+<div class="grid pswp-gallery" id="gallery-one">
   <div class="grid-item">
     <a href="{{ site.baseurl }}/galleries/gallery-1/louis-de-jarzat-00YHwl4xVsM-unsplash.jpg" data-pswp-width="4000" data-pswp-height="2250" target="_blank">
       <img src="{{ site.baseurl }}/galleries/gallery-1/thumbnail_louis-de-jarzat-00YHwl4xVsM-unsplash.jpg" alt="" />
@@ -115,6 +117,28 @@ and imagesloaded. See /galleries for details on how to set up your own galleries
     </a>
   </div>
 
+</div>
+
+And here is another photo gallery.
+
+<div class="grid pswp-gallery" id="gallery-two">
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-2/leon-rohrwild-XqJyl5FD_90-unsplash.jpg" data-pswp-width="6240" data-pswp-height="4160" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-2/thumbnail_leon-rohrwild-XqJyl5FD_90-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-2/luis-magallon-rK4p0vUjVKc-unsplash.jpg" data-pswp-width="8000" data-pswp-height="6000" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-2/thumbnail_luis-magallon-rK4p0vUjVKc-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-2/simon-0EkEV2fKVCs-unsplash.jpg" data-pswp-width="4160" data-pswp-height="6240" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-2/thumbnail_simon-0EkEV2fKVCs-unsplash.jpg" alt="" />
+    </a>
+  </div>
 </div>
 
 Here are some tags to show the styling:

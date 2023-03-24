@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     <!-- Customisation  -->
     <link rel="stylesheet" type="text/css" href="{{'/assets/css/main.css' | relative_url}} " />
-    {% if page.has_gallery %}
+    {% if page.galleries.size > 0 %}
     <link rel="stylesheet" href="{{'/assets/css/photoswipe/photoswipe.css' | relative_url}}">
     <script src="{{'/assets/js/imagesloaded/imagesloaded.pkgd.min.js' | relative_url}}"></script>
     <script src="{{'/assets/js/masonry/masonry.pkgd.min.js' | relative_url}}"></script>
@@ -23,6 +23,9 @@
         .grid-item {
             width: 210px;
             margin-bottom: 5px;
+        }
+        .grid {
+            margin-bottom: 20px;
         }
     </style>
     {% endif %}
@@ -58,29 +61,30 @@
       })();
 
     </script>
-    {% if page.has_gallery %}
+    {% if page.galleries.size > 0 %}
     <script type="module">
       import PhotoSwipeLightbox from '{{"/assets/js/photoswipe/photoswipe-lightbox.esm.min.js" | relative_url}}';
       import PhotoSwipe from '{{"/assets/js/photoswipe/photoswipe.esm.min.js" | relative_url}}';
 
-      const lightbox = new PhotoSwipeLightbox({
-        gallery: '#my-gallery',
+      {% for gallery_id in page.galleries %}
+      const lightbox_{{gallery_id}} = new PhotoSwipeLightbox({
+        gallery: '#gallery-{{gallery_id}}',
         children: 'a',
         pswpModule: PhotoSwipe
       });
-      lightbox.init();
+      lightbox_{{gallery_id}}.init();
+      {% endfor %}
     </script>
     <script>
-      var elem = document.querySelector('.grid');
-      var msnry = new Masonry( elem, {
-        // options
-        itemSelector: '.grid-item',
-        columnWidth: 230
-      });
-
-      imagesLoaded( elem ).on( 'progress', function() {
-        // layout Masonry after each image loads
-        msnry.layout();
+      var elements = document.getElementsByClassName('grid');
+      imagesLoaded(document.querySelector('main'), function() {
+        var n = elements.length;
+        for (var i = 0; i < n; i++) {
+          msnry = new Masonry(elements[i], {
+            itemSelector: '.grid-item',
+            columnWidth: 230,
+          });
+        }
       });
     </script>
     {% endif %}

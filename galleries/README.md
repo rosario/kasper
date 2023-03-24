@@ -23,13 +23,13 @@ eg.
 
 2) Run thumbnail.sh
 
-```
-./thumbnail.sh
-```
-
 Execute thumbnail.sh to generate thumbnail files for the images in the
 galleries and index.html files. Modify thumbnail.sh to change the base_url
 variable if you wish to fix the url prefixes in the index.html.
+
+```
+./thumbnail.sh
+```
 
 3) Copy and paste html
 
@@ -43,6 +43,14 @@ Replace the url prefix with "{{ site.baseurl }}".
 
 eg. `http://127.0.0.1:4000/dark-kasper => {{ site.baseurl }}`
 
-5) Add has_gallery variable
+5) Add galleries variable
 
-At the top of your post, set the has_gallery variable.
+At the top of your post, set the galleries variable (a list of gallery ids
+is expected). The galleries should have ids like: "gallery-one" or "gallery-x".
+The expected galleries variable would then be:
+
+```
+galleries:
+  - one
+  - x
+```
