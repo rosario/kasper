@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2013-11-10 10:18:00
 categories: Thriller Comedy Horror
+has_gallery: true
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
@@ -49,6 +50,72 @@ And here is a table:
 And here is an image:
 
 ![image description]({{ site.baseurl }}/assets/images/example-image.png)
+
+And here is an image gallery of random unsplash images displayed using photoswipe, masonry
+and imagesloaded. See /galleries for details on how to set up your own galleries.
+
+<div class="grid pswp-gallery" id="my-gallery">
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-1/louis-de-jarzat-00YHwl4xVsM-unsplash.jpg" data-pswp-width="4000" data-pswp-height="2250" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-1/thumbnail_louis-de-jarzat-00YHwl4xVsM-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-1/clark-van-der-beken-l2AmhAw8hyk-unsplash.jpg" data-pswp-width="2861" data-pswp-height="4444" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-1/thumbnail_clark-van-der-beken-l2AmhAw8hyk-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-1/mary-brennan-3AdpK0ib5ko-unsplash.jpg" data-pswp-width="4661" data-pswp-height="6991" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-1/thumbnail_mary-brennan-3AdpK0ib5ko-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-1/alex-quezada-UsVoHGRjWAs-unsplash.jpg" data-pswp-width="4085" data-pswp-height="6128" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-1/thumbnail_alex-quezada-UsVoHGRjWAs-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-1/kristaps-ungurs-8sehVODwNtk-unsplash.jpg" data-pswp-width="5985" data-pswp-height="3982" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-1/thumbnail_kristaps-ungurs-8sehVODwNtk-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-1/patryk-wojcieszak-MN0mhf9kr_o-unsplash.jpg" data-pswp-width="2133" data-pswp-height="3200" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-1/thumbnail_patryk-wojcieszak-MN0mhf9kr_o-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-1/madita-luisa-sUoTw-E13ww-unsplash.jpg" data-pswp-width="4000" data-pswp-height="5600" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-1/thumbnail_madita-luisa-sUoTw-E13ww-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-1/masahiro-miyagi-EesGu5cRnWo-unsplash.jpg" data-pswp-width="5208" data-pswp-height="3583" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-1/thumbnail_masahiro-miyagi-EesGu5cRnWo-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-1/andrew-castillo-jkK8B9brrS4-unsplash.jpg" data-pswp-width="3265" data-pswp-height="4898" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-1/thumbnail_andrew-castillo-jkK8B9brrS4-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a href="{{ site.baseurl }}/galleries/gallery-1/karl-paul-baldacchino-0Eup9Wiit7E-unsplash.jpg" data-pswp-width="4000" data-pswp-height="6000" target="_blank">
+      <img src="{{ site.baseurl }}/galleries/gallery-1/thumbnail_karl-paul-baldacchino-0Eup9Wiit7E-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+</div>
 
 Here are some tags to show the styling:
 
