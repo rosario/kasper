@@ -1,0 +1,14 @@
+FROM fedora:37
+
+RUN dnf install -y \
+    ImageMagick \
+    perl-Image-ExifTool \
+    python3 \
+    python3-pip
+
+RUN pip3 install filetype pillow sh
+
+COPY thumbnailer.py /usr/bin/thumbnailer.py
+RUN chmod +x /usr/bin/thumbnailer.py
+
+ENTRYPOINT ["/usr/bin/thumbnailer.py"]
